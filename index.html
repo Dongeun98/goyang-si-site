@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(20, 21, 95);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 16px 28px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(193, 231, 248);
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><a href="index.html"><img src="image/logo2.png" alt="로고1" style="float:left;width:160px;height:130px;"></a>평화의 시작, 미래의 중심 고양시</h1>
+  <p><a href="http://www.goyang.go.kr/park/index.do">#호수공원</a><a href="https://flower.or.kr:5521/main/main.php">#꽃축제</a><a href="https://www.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121500&menuNo=7020092">#북한산</a><a href="https://www.kintex.com">#킨텍스</a><a href="http://naver.me/xorHyAao">#라페스타</a><a href="https://www.starfield.co.kr/goyang/main.do">#스타필드</a><a href="http://www.goyang.go.kr/haengju/index.do">#행주산성</a></p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">홈페이지</a>
+  <a href="도시정보.html">도시정보</a>
+  <a href="관광명소.html">관광명소</a>
+  <a href="축제문화행사.html">축제/문화행사</a>
+  <a href="음식숙박쇼핑.html">음식/숙박/쇼핑</a>
+  <a href="http://www.goyang.go.kr/www/index.do">고양시청</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>고양시 관광지도</h1>
+      <a href="page1.html"><img src="image/logo4.jpg" alt="로고4" style="width:1185px;height:600px;"></a>
+      <h1>고양시 슬로건 소개</h1>
+      <img src="image/logo5.png" alt="로고5" style="width:1185px;height:300px;">
+      <p>고양시 슬로건은 고양시가 지향하는 이미지인 평화, 행복, 미래의 중심인 고양을 집약하여 시작적으로 변환한 상징이미지이며 
+        심볼(Symbol)과 워드마크(Wordmark)를 합친 콤비네이션(Combination) 또는 시그니처(Signature) 형태의 로고(Logo)로 '고양' B.I(Brand Identity)의
+      가장 중요한 요소이며, 모든 시각적 커뮤니케이션 활동의 핵심으로 응용 아이템에 전반적으로 적용되어 고양시의 미래 방향을 대변하는 이미지의 역할을 한다.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2><a href="http://www.goyang.go.kr/www/emergencyPopup/BD_selectCoronaPopupRoute.do">고양시 코로나19 현황</a></h2>
+      <img src="image/logo3.jfif" alt="로고3" style="width:340px;height:420px;">
+      <h3><a href="https://map.naver.com/v5/search/%20%EC%84%A0%EB%B3%84%EC%A7%84%EB%A3%8C%EC%86%8C?placePath=display=18%26entry=pll%26sessionid=OcHyz0OQRDtIJVyTIBYXBg%253D%253D%26sortingOrder=precision%26start=1&c=14115305.9333675,4531392.4612588,13,0,0,0,dh">고양시 선별진료소 위치보기</a></h3>
+    </div>
+    <div class="card">
+      <h2>고양시 마스코트</h2>
+      <h3>고양고양이</h3>
+      <img src="image/logo6.png" alt="로고6" style="width:160px;height:225px;">
+      <p><a href="http://www.goyang.go.kr/component/resrce/file/ND_resrceFileDownload.do?resrceSn=152&resrceVer=1&fileSn=1">고양고양이 메뉴얼 가이드북 다운로드</a></p>
+    </div>
+    <div class="card">
+      <a href="http://www.goyang.go.kr/mayor/index.do"><img src="image/logo7.png" alt="로고7" style="width:350px;height:135px;"></a>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

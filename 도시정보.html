@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(20, 21, 95);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 16px 28px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(193, 231, 248);
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><a href="index.html"><img src="image/logo2.png" alt="로고1" style="float:left;width:160px;height:130px;"></a>도시정보</h1>
+  <p><a href="http://www.goyang.go.kr/park/index.do">#호수공원</a><a href="https://flower.or.kr:5521/main/main.php">#꽃축제</a><a href="https://www.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121500&menuNo=7020092">#북한산</a><a href="https://www.kintex.com">#킨텍스</a><a href="http://naver.me/xorHyAao">#라페스타</a><a href="https://www.starfield.co.kr/goyang/main.do">#스타필드</a><a href="http://www.goyang.go.kr/haengju/index.do">#행주산성</a></p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">홈페이지</a>
+  <a href="도시정보.html">도시정보</a>
+  <a href="관광명소.html">관광명소</a>
+  <a href="축제문화행사.html">축제/문화행사</a>
+  <a href="음식숙박쇼핑.html">음식/숙박/쇼핑</a>
+  <a href="http://www.goyang.go.kr/www/index.do">고양시청</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>고양시 인구 및 행정구역 현황</h1>
+      <img src="image/logo8.png" alt="로고8" style="width:300px;height:400px;"> <img src="image/logo9.jpg" alt="로고9" style="width:600px;height:400px;">
+    </div>
+    <div class="card">
+      <h1>고양시 상징물</h1>
+      <img src="image/logo10.png" alt="로고10" style="width:800px;height:300px;">
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>고양시 도시정보</h1ㄴ>
+      <img src="image/logo11.png" alt="로고11" style="width:500px;height:400px;">
+      <h3>신한류 문화 관광도시 고양. 방송국이 있어 방송 제작과 콘텐츠 관련 경험 등 색다른 체험이 가능해 해외 관광객들로부터도 많은 사랑을
+        받고 있다. 600년의 문화유적을 간직한 고양시는 행주산성과 북한산성이 자리해 등산코스로도 제격이다. 현대식 전통시장인 웨스턴돔은 스트리트형 쇼핑몰인 라페스타와 함께 다양한 문화시설을 즐길 수 있다.</h3>
+    </div>
+    <div class="card">
+      <h2>고양시 연도별 인구 현황</h2>
+      <img src="image/logo12.jpeg" alt="로고12" style="width:270px;height:250px;"> <img src="image/logo13.png" alt="로고13" style="width:270px;height:250px;">
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(20, 21, 95);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 16px 28px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(193, 231, 248);
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><a href="index.html"><img src="image/logo2.png" alt="로고1" style="float:left;width:160px;height:130px;"></a>축제/문화행사</h1>
+  <p><a href="http://www.goyang.go.kr/park/index.do">#호수공원</a><a href="https://flower.or.kr:5521/main/main.php">#꽃축제</a><a href="https://www.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121500&menuNo=7020092">#북한산</a><a href="https://www.kintex.com">#킨텍스</a><a href="http://naver.me/xorHyAao">#라페스타</a><a href="https://www.starfield.co.kr/goyang/main.do">#스타필드</a><a href="http://www.goyang.go.kr/haengju/index.do">#행주산성</a></p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">홈페이지</a>
+  <a href="도시정보.html">도시정보</a>
+  <a href="관광명소.html">관광명소</a>
+  <a href="축제문화행사.html">축제/문화행사</a>
+  <a href="음식숙박쇼핑.html">음식/숙박/쇼핑</a>
+  <a href="http://www.goyang.go.kr/www/index.do">고양시청</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>1월행사 행주산성해맞이축제</h2>
+      <a href="https://www.goyang.go.kr/visitgoyang/contents/event/event_view.asp?cate_depth2=CD0200&cateCode=EP0010&num=1"><img src="image/logo19.jpg" alt="로고19" style="width:750px;height:400px;"></a>
+    </div>
+    <div class="card">
+      <h2>4월행사 고양국제꽃박람회</h2>
+      <a href="https://www.goyang.go.kr/visitgoyang/contents/event/event_view.asp?cate_depth2=CD0200&cateCode=EP0030&num=2"><img src="image/logo21.jpg" alt="로고21" style="width:750px;height:400px;"></a>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>5월행사 행주문화제</h2>
+      <a href="https://www.goyang.go.kr/visitgoyang/contents/event/event_view.asp?cate_depth2=CD0200&cateCode=EP0040&num=7"><img src="image/logo20.jpg" alt="로고" style="width:750px;height:400px;"></a>
+    </div>
+    <div class="card">
+      <h2>10월행사 고양호수에술축제</h2>
+      <a href="https://www.goyang.go.kr/visitgoyang/contents/event/event_view.asp?cate_depth2=CD0200&cateCode=EP0070&num=3"><img src="image/logo22.jpg" alt="로고22" style="width:750px;height:400px;"></a>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
